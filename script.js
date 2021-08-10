@@ -1,5 +1,5 @@
 var app = new Vue ({
-    el: '#app',
+    el: '#v-on',
     data: {
         count: 0
     },

@@ -5,32 +5,24 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
-    <title>v-on</title>
+    <title>link</title>
 </head>
 <body>
-    <div id="v-on">
+    <div id="app">
         <div class="container mt-5">
-            <h1>Сонни +1 ошириш ва -1га камайтириш</h1>
-            <h1>{{ count }}</h1>
-            
-            <button class="btn btn-success" v-on:click='countUp'>
-                +1
-            </button>
+            <h1>URL <a>{{ cleanUrl }}</a></h1>
 
-            <!-- <button class="btn btn-success" @click='countUp'>
-                +1
-            </button> -->
-
-            <button class="btn btn-danger" @click='countDown'>
-                -1
-            </button>           
-
+            <input type="text" class="form-control" v-model='url'>       
+            <br>
+            <input type="text" class="form-control" v-model='url2'> 
+            <br>
+            <button v-on:click="curl" class="btn btn-primary" >CleanUrl</button>
         </div>
         
 
     </div>
 
     <script src="https://cdn.jsdelivr.net/npm/vue@2.6.14/dist/vue.js"></script>
-    <script src="script.js"></script>
+    <script src="link.js"></script>
 </body>
 </html>
